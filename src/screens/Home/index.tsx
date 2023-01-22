@@ -20,8 +20,6 @@ export  function Home() {
     const [tarefaName, setTarefaName] = useState<string>('');
     const { created, setCreated, setConcluded, concluded} = useContext(Context)
 
-  
-   
 
     function handleAddTarefa() {
        
@@ -90,20 +88,13 @@ export  function Home() {
         listController.forEach(item => {
             if (item === true){
                 counter+=1
-                setConcluded(counter)
+               
             }
-            else if (item === false && counter > 0){
-                counter-=1
-                setConcluded(counter)
-            }
+            setConcluded(counter)
+
         })
 
-        console.log(counter)
-
-        
-    
-
-
+       
     },[tarefasList])
    
 

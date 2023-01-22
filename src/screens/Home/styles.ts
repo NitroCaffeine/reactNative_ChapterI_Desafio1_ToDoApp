@@ -75,7 +75,7 @@ export const styles = StyleSheet.create({
         justifyContent:'space-between',
         flexDirection: 'row',
         marginTop: 32,
-        width:'auto',
+        width:'100%',
        
        
      
@@ -93,10 +93,10 @@ export const styles = StyleSheet.create({
     },
     quantity:{
         backgroundColor:'#AAAAAA',
-        borderRadius: 25,
+        borderRadius: 24,
         width: 24,
         height: 19,
-        marginLeft: 30,
+        marginLeft: 20,
         color: '#fff',
         justifyContent: 'center',
         alignItems: 'center',

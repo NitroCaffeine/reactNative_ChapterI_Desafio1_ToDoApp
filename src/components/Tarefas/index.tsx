@@ -20,7 +20,6 @@ interface TarefasProps {
 export function Tarefas({tasks, onRemove, onUpdate}: TarefasProps) {
 
     const [tarefa, setTarefa] = useState<Tasks>(tasks)
-    const {concluded, setConcluded} = useContext(Context)
 
   
     useEffect(() => {
